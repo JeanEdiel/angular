@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
+  valor: number = 5;
+
+  deletarCiclo: boolean = false;
+
+  mudarValor(): void {
+    this.valor++;
+  }
+
+  destruirCiclo(): void {
+    this.deletarCiclo = true;
+  }
+
+  reiniciarCiclo(): void {
+    this.deletarCiclo = false;
+  }
 }
